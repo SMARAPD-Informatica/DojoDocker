@@ -1,0 +1,5 @@
+﻿FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine
+USER root
+WORKDIR /home/app
+RUN apk update
+RUN apk add --update nodejs npm
